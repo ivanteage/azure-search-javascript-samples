@@ -11,6 +11,7 @@ import AppHeader from '../components/AppHeader/AppHeader';
 // React Router page components
 import Home from '../pages/Home/Home';
 import Search from '../pages/Search/Search';
+import Basic from '../pages/Search/Basic';
 import Details from '../pages/Details/Details';
 
 // Bootstrap styles, optionally with jQuery and Popper
@@ -50,6 +51,7 @@ export default function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/search" component={Search} />
+            <Route path="/basic" component={Basic} />            
             <Route path="/details/:id" component={Details} />
           </Switch>
         </Router>
